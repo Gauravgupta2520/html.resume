@@ -1,29 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+
+<head> 
+    <meta charset="UTF-8">
     <title>Gaurav Gupta - Aspiring Web Developer</title>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
-    <h1>Gaurav Shyamlal Gupta</h1>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Gaurav</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#queries">Queries</a></li>
+      </ul>
+    </div>
+    <button id="themeToggle" class="btn btn-outline-light ms-3">Dark Mode</button>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-primary text-white text-center p-5">
+  <div class="container">
+    <h1 class="tiktok-sans-unique">Gaurav Shyamlal Gupta</h1>
+    <p class="lead">Aspiring Web Developer | Automation Engineer | Tech Enthusiast</p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="p-5">
+  <div class="container">
+    <h2 style="color:black;">
+      <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/person-fill.svg" width="32" height="32" alt="About Icon" style="vertical-align:middle; margin-right:8px;">
+      About Me
+    </h2>
+    <p>I am an <strong>Automation Engineer</strong> with over 2 years of experience in Web and API Testing. Currently, I am learning <strong>website development</strong> and building my skills in HTML. I am passionate about technology and always eager to learn new tools and frameworks.</p>
     <p><strong>Phone:</strong> 7666963367</p>
     <p><strong>Email:</strong> <a href="mailto:gauravgupta2520@gmail.com">gauravgupta2520@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/gaurav-gupta-b12171218">linkedin.com/in/gaurav-gupta-b12171218</a></p>
-    <p>I am an <strong>Automation Engineer</strong> with over 2 years of experience in Web and API Testing. Currently, I am learning <strong>website development</strong> and building my skills in HTML. I am passionate about technology and always eager to learn new tools and frameworks.</p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/gaurav-gupta-b12171218" target="_blank">linkedin.com/in/gaurav-gupta-b12171218</a></p>
+  </div>
+</section>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Languages: Java, Python</li>
-        <li>Automation Tools: Selenium, RestAssured, Postman</li>
-        <li>Databases: MS SQL, PostgreSQL</li>
-        <li>Data Visualization: Power BI, Excel</li>
-        <li>Gen-AI Tools: Microsoft Co-Pilot, GitHub Copilot</li>
-    </ul>
+<!-- Skills Section -->
+<section id="skills" class="bg-light p-5">
+  <div class="container">
+    <h2 class="mb-4 text-center" style="color:black;">
+      <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/briefcase-fill.svg" width="32" height="32" alt="Skills Icon" style="vertical-align:middle; margin-right:8px;">
+      Skills
+    </h2>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Languages:</strong> Java, Python</li>
+          <li class="list-group-item"><strong>Automation Tools:</strong> Selenium, RestAssured, Postman</li>
+          <li class="list-group-item"><strong>Databases:</strong> MS SQL, PostgreSQL</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Data Visualization:</strong> Power BI, Excel</li>
+          <li class="list-group-item"><strong>Gen-AI Tools:</strong> Microsoft Co-Pilot, GitHub Copilot</li>
+          <li class="list-group-item"><strong>Web Development:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <h2>Current Goal</h2>
-    <p>Learning and building websites using HTML as the first step into front-end development.</p>
+<!-- Projects Section -->
+<section id="projects" class="p-5">
+  <div class="container">
+    <h2 style="color:black;">
+      <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/journal-code.svg" width="32" height="32" alt="Projects Icon" style="vertical-align:middle; margin-right:8px;">
+      Projects
+    </h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Project One</h5>
+            <p class="card-text">A web app that does XYZ using React and Node.js.</p>
+            <a href="https://github.com/Gauravgupta2520?tab=repositories" class="btn btn-primary" target="_blank" rel="noopener">View Project</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more project cards here -->
+    </div>
+  </div>
+</section>
 
-    <img src="https://www.animatedimages.org/data/media/202/animated-dog-image-0712.gif" height="200" alt="Animated Dog" style="width: 300px; height: auto;">
+<!-- Contact Section -->
+<section id="contact" class="bg-light p-5">
+  <div class="container">
+    <h2 style="color:black;">
+      <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/envelope-fill.svg" width="32" height="32" alt="Contact Icon" style="vertical-align:middle; margin-right:8px;">
+      Contact Me
+    </h2>
+    <p>If you'd like to reach out directly, feel free to email me at <a href="mailto:gauravgupta2520@gmail.com">gauravgupta2520@gmail.com</a> or call me at <strong>7666963367</strong>.</p>
+  </div>
+</section>
+
+<!-- Queries Section -->
+<section id="queries" class="bg-light p-5">
+  <div class="container">
+    <h2 style="color:black;">
+      <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/question-circle-fill.svg" width="32" height="32" alt="Queries Icon" style="vertical-align:middle; margin-right:8px;">
+      What you looking for or queries
+    </h2>
+    <!--form -->
+    
+<form th:action="@{/submitquery}" th:object="${user}" method="post">
+  <div class="mb-3">
+    <label for="visitorEmail" class="form-label">Your Email:</label>
+    <input type="email" class="form-control" id="visitorEmail" th:field="*{email}" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="visitorMessage" class="form-label">What are you looking for?</label>
+    <textarea class="form-control" id="visitorMessage" th:field="*{query}" rows="4" maxlength="300" required></textarea>
+    <small id="charCount" class="form-text text-muted">300 characters left</small>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    <!-- End of form -->
+    
+
+  </div>
+</section>
+
+<footer  id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      <i class="bi bi-bootstrap" style="font-size: 2rem;"></i>
+    </a>
+    <span style="color:#fff;" id="copyright-year">© 2025 Gaurav Gupta</span>
+  </div>
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3">
+      <a  href="https://twitter.com/" target="_blank" rel="noopener">
+        <i class="bi bi-twitter" style="font-size: 1.5rem;"></i>
+      </a>
+    </li>
+    <li class="ms-3">
+      <a  href="https://instagram.com/" target="_blank" rel="noopener">
+        <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+      </a>
+    </li>
+    <li class="ms-3">
+      <a  href="https://facebook.com/" target="_blank" rel="noopener">
+        <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+      </a>
+    </li>
+  </ul>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Theme toggle button
+  const themeBtn = document.getElementById('themeToggle');
+  themeBtn.addEventListener('click', function() {
+    document.body.classList.toggle('bg-dark');
+    document.body.classList.toggle('text-light');
+    document.querySelectorAll('section, .card').forEach(el => {
+      el.classList.toggle('bg-dark');
+      el.classList.toggle('text-light');
+      el.classList.toggle('bg-light');
+    });
+    themeBtn.textContent = document.body.classList.contains('bg-dark') ? "Light Mode" : "Dark Mode";
+  });
+
+  // Smooth scroll for navbar links
+  const nav = document.querySelector('.navbar');
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href').replace('#', '');
+      const target = document.getElementById(targetId);
+      if (target) {
+        e.preventDefault();
+        window.scrollTo({
+          top: target.offsetTop - nav.offsetHeight,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Dynamic year in footer
+  const yearSpan = document.getElementById('copyright-year');
+  if (yearSpan) {
+    yearSpan.textContent = `© ${new Date().getFullYear()} Gaurav Gupta`;
+  }
+
+  // Form feedback
+  const form = document.querySelector('#queries form');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      form.reset();
+      const msg = document.createElement('div');
+      msg.className = "alert alert-success mt-3";
+      msg.textContent = "Thank you for your query! We'll get back to you soon.";
+      form.parentNode.appendChild(msg);
+      setTimeout(() => msg.remove(), 4000);
+    });
+  }
+
+  // Character count for textarea
+  const textarea = document.getElementById('visitorMessage');
+  const charCount = document.getElementById('charCount');
+  if (textarea && charCount) {
+    textarea.addEventListener('input', function() {
+      const remaining = 300 - textarea.value.length;
+      charCount.textContent = `${remaining} characters left`;
+    });
+  }
+
+  // Scroll-to-top button
+  const scrollBtn = document.createElement('button');
+  scrollBtn.className = "btn btn-primary";
+  scrollBtn.style.position = "fixed";
+  scrollBtn.style.bottom = "90px"; // Changed from 30px to 90px to move above footer icons
+  scrollBtn.style.right = "30px";
+  scrollBtn.style.zIndex = "999"; // Ensure button stays above other elements
+  scrollBtn.style.display = "none";
+  scrollBtn.textContent = "↑ Top";
+  document.body.appendChild(scrollBtn);
+
+  window.addEventListener('scroll', function() {
+    scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+
+  scrollBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
